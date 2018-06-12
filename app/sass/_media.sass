@@ -1,0 +1,299 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1700px)
+    .third-section
+      .dancer
+        width: 530px
+        height: 540px
+
+@media only screen and (max-width : 1600px)
+    .third-section
+      .dancer
+        width: 430px
+        height: 430px
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1400px)
+    header
+      min-height: 680px
+    .third-section
+      .dancer
+        width: 400px
+        height: 400px
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1300px)
+    .third-section
+      .dancer
+        display: none
+
+    .our-teachers-sections
+      .items
+        margin: 0 -20px
+      .item
+        padding: 0 20px
+        .wrap-img
+          width: 150px
+          height: 150px
+
+
+
+@media only screen and (max-width : 1200px)
+    header
+      overflow: hidden
+      background-image: url(../img/background-header-3.png) !important
+      .background-puple
+        position: absolute
+        background-image: url(../img/background-mobile-puple.png)
+        background-size: cover
+        bottom: 0
+        left: 0
+        width: 765px
+        height: 455px
+    .contact-form-section
+      .form-hold
+        .form-row-wrap
+          justify-content: center
+        .form-row
+          width: 70%
+          margin-bottom: 15px
+        .form-control
+          height: 40px
+          font-size: 18px
+        .btn
+          height: 50px
+          font-size: 18px
+        .wrap-btn
+          &:after
+            content: none
+
+    .wrap-tnx-page
+      header
+        .background-puple
+          display: none
+
+
+
+
+@media only screen and (max-width : 1100px)
+  header
+    .background-puple
+      width: 720px
+      height: 430px
+    footer
+      .left-block
+        width: 35%
+      .right-block
+        width: 65%
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+    header
+      .wrap-header
+        width: 100%
+
+      .wrap-img
+        padding-top: 30px
+        margin-bottom: 10px
+        width: 250px
+      .wrap-text
+        h1
+          display: none
+        p
+          font-size: 30px
+
+    .contact-form-section
+      .form-hold
+        .form-row
+          width: 100%
+    .our-teachers-sections
+      .item
+        width: 30%
+
+
+
+@media only screen and (max-width : 860px)
+    header
+      .wrap-header
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+      .background-puple
+        width: 700px
+        height: 418px
+    footer
+      .wrap-footer
+        flex-direction: column
+        text-align: center
+      .left-block
+        width: 100%
+        justify-content: center
+        margin-bottom: 20px
+      .right-block
+        width: 100%
+        justify-content: center
+    .contact-form-section
+      .form-hold
+        h3
+          line-height: 1.3
+          span
+            display: block
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+    header
+      .background-puple
+        width: 590px
+        height: 350px
+    .third-section
+      min-height: 450px
+      .main-holder
+        padding: 0 30px
+      .wrap-img
+        width: 250px
+      h3
+        font-size: 30px
+      p
+        font-size: 20px
+
+    .our-teachers-sections
+      .item
+        width: 50%
+    .contact-form-section
+      .main-holder-contact
+        padding: 0 30px
+
+@media only screen and (max-width : 600px)
+    .mobile-br
+      display: block
+    .mobile-hidden
+      display: none
+    .contact-form-section
+      .main-holder-contact
+        padding: 0
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 482px)
+    header
+      background-image: url(../img/background-mobile.png) !important
+      //min-height: 600px
+      //min-height: 480px
+      min-height: 400px
+      .background-puple
+        position: absolute
+        background-image: url(../img/background-mobile-puple.png)
+        background-size: cover
+        bottom: -40px
+        left: -50px
+        //width: 375px
+        width: 435px
+        height: 225px
+      .wrap-img
+        //width: 230px
+      .wrap-text
+        p
+          font-size: 18px
+    .third-section
+      h3
+        font-size: 26px
+      p
+        font-size: 18px
+
+    .slick-slider
+      .slick-slide
+        width: 375px
+      .slick-arrow
+        width: 40px
+        height: 70px
+      .slick-next
+        &:after
+          width: 15px
+          height: 15px
+      .slick-prev
+        &:after
+          width: 15px
+          height: 15px
+
+    .contact-form-section
+      .form-hold
+        h3
+          font-size: 17px
+          margin: 0 0 15px
+        .form-control
+          font-size: 16px
+
+    footer
+      .left-block
+        .wrap-img
+          width: 150px
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.our-teachers-sections
+      padding: 30px 0 0
+      .main-holder
+        padding: 0 30px
+      h3
+        font-size: 30px
+      .item
+        .wrap-img
+          width: 130px
+          height: 130px
+        p
+          font-size: 18px
+      .button
+        margin: 30px 0 60px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+    .our-teachers-sections
+      .item
+        p
+          font-size: 14px
+    footer
+      .right-block
+        p
+          font-size: 14px
+    .contact-form-section
+      .form-hold
+        h3
+          font-size: 14px
+    .our-teachers-sections
+      h3
+        font-size: 25px
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
