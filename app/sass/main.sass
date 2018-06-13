@@ -115,8 +115,11 @@ header
 			font-size: 48px
 		p
 			font-size: 35px
+			font-family: "OpenSansHebrew-Regular_0"
 			//transform: rotate(-6deg)
 			//min-width: 245px
+		.mobile-onli
+			display: none
 
 .contact-form-section
 	background: black
@@ -164,7 +167,7 @@ header
 			margin: 0 -8px
 
 		.form-row
-			width: 17%
+			width: 21%
 			padding: 0 8px
 
 
@@ -189,7 +192,7 @@ header
 				text-decoration: none
 				color: #111
 		.wrap-btn
-			width: 15%
+			width: 16%
 		.wrap-btn
 			position: relative
 			&:after
@@ -208,7 +211,8 @@ header
 				z-index: 99999
 
 		.btn
-			background: #1aeef1
+			//background: #1aeef1
+			background: #08b7ee
 			font-family: "OpenSansHebrew-Bold_0"
 			color: black
 			text-align: center
@@ -221,7 +225,8 @@ header
 			text-decoration: none
 			transition: all .3s ease
 			&:hover
-				background-color: #03fbff
+				//background-color: #1aeef1
+				background-color: #2accff
 				color: #ff3ca3
 				font-size: 25px
 				text-decoration: none
@@ -374,6 +379,7 @@ header
 	h3
 		font-family: "OpenSansHebrew-Bold_0"
 		font-size: 35px
+		color: white
 	p
 		font-family: "OpenSansHebrew-Regular_0"
 		font-size: 22px
@@ -396,15 +402,15 @@ header
 		justify-content: center
 		align-items: center
 		flex-wrap: wrap
-		margin: 0 -40px
+		margin: 0 -20px
 	.item
 		list-style: none
 		display: flex
 		justify-content: center
 		align-items: center
 		flex-direction: column
-		padding: 0 40px
-		width: 20%
+		padding: 0 20px
+		width: 16.6%
 		margin-bottom: 25px
 		p
 			font-size: 21px
@@ -421,6 +427,8 @@ header
 				//background-color: #fe7b84
 				text-decoration: none
 				color: #111
+			img
+				border-radius: 50%
 	.button
 		display: flex
 		justify-content: center
@@ -451,7 +459,7 @@ header
 				border-top: 3px solid black
 				//z-index: 99999
 				transform: translateY(-50%) rotate(45deg)
-				z-index: 99999
+				z-index: 2
 			&:hover
 				//background-color: #03fbff
 				//color: #03fbff
@@ -525,8 +533,9 @@ header
 
 	.slick-slide
 		float: left
-		height: 100%
-		min-height: 200px
+		//height: 100%
+		height: 400px
+		//width: 640px
 
 	.slick-arrow
 		position: absolute
@@ -538,7 +547,7 @@ header
 		//border-left: 5px solid #00b3cb
 		//border-top: 5px solid #00b3cb
 		background: #fb6ff6
-		z-index: 99999
+		z-index: 2
 
 
 	.slick-next
@@ -597,6 +606,12 @@ footer
 		display: flex
 		align-items: center
 		justify-content: flex-start
+		.logo-footer-3
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 165px
+			margin-left: 50px
 	.right-block
 		width: 50%
 		display: flex

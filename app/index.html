@@ -64,7 +64,8 @@
 				<h1>ההרשמה החלה!</h1>
 				<!--<p>הבטיחו את מקומכם</p>-->
 				<!--<p>בשנת הלימודים הבאה</p>-->
-				<p>החלה ההרשמה לשנה הבאה</p>
+				<p class="mobile-onli">החלה ההרשמה לשנה הבאה</p>
+				<p class="desctop-onli">הבטיחו את מקומכם<br> בשנת הלימודים הבאה</p>
 			</div>
 		</div>
 	</div>
@@ -76,11 +77,11 @@
 			<form action="form_processing.php" class="form form-validation" method="post">
 				<div class="form-row-wrap">
 					<div class="form-row">
-						<input name="name" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם פרטי">
+						<input name="name" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם מלא">
 					</div>
-					<div class="form-row">
-						<input name="lname" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם משפחה">
-					</div>
+					<!--<div class="form-row">-->
+						<!--<input name="lname" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם משפחה">-->
+					<!--</div>-->
 					<div class="form-row">
 						<input name="tel" class="form-control" required data-required="true" type="text" placeholder="*טלפון" pattern="(((02)|(03)|(04)|(08)|(09)){1}[\d]{7,8})|(((071)|(072)|(073)|(074)|(076)|(077)|(078)|(079)|(050)|(051)|(052)|(053)|(054)|(055)|(056)|(058)|(059)){1}[\d]{6,7})" title="International, state or local telephone number">
 					</div>
@@ -90,7 +91,7 @@
 					<div class="form-row center">
 						<select required name="sources" id="sources" class="form-control custom-select sources" placeholder="בחר סניף">
 							<!--<option value="" selected data-default>*בחר סניף</option>-->
-							<option value="סניף ראשון לציון">סניף ראשון לציון</option>
+							<option value="סניף ראשון לציון">ראשון לציון</option>
 							<option value="סניף ראש העין">נס ציונה</option>
 						</select>
 					</div>
@@ -105,9 +106,10 @@
 <div class="third-section" style="background-image: url(img/background-third-section.png)">
 	<div class="dancer"></div>
 	<div class="main-holder">
-		<div class="wrap-img">
-			<img src="img/logo-third-section.png" alt="">
-		</div>
+		<!--<div class="wrap-img">-->
+			<!--<img src="img/logo-third-section.png" alt="">-->
+		<!--</div>-->
+		<h3>קצב הגוף</h3>
 		<div class="wrap-text">
 			<h3> המרכז לריקוד המוביל בתחומו כבר 30 שנה</h3>
 			<p>לאורך השנים גדלו בקצב הגוף רקדנים רבים שזוכים לקריירה גדולה המוצגת על מסכי הטלויזיה, בקליפים, בהופעות והפקות גדולות. מאז ועד היום מהווה קצב הגוף מקור השראה וחדשנות בתחום במחול.</p>
@@ -150,6 +152,12 @@
 				</div>
 				<p>הילה אסרף</p>
 			</li>
+			<li class="item">
+				<div class="wrap-img">
+					<img src="img/teacher-6.png" alt="">
+				</div>
+				<p>אופק</p>
+			</li>
 		</ul>
 		<div class="button button-mobile">
 			<a href="#form-scroll"><span>להרשמה</span></a>
@@ -161,18 +169,39 @@
 	<div class="wrap-section">
 		<div class="variable-width">
 			<div class="item">
-				<a data-fancybox="gallery" href="img/slide-1.png">
-					<img src="img/slide-1.png"alt="#">
+				<a data-fancybox="gallery" href="img/slides/slide-1-big.JPG">
+					<img src="img/slides/slide-1.png"alt="#">
 				</a>
 			</div>
 			<div class="item">
-				<a data-fancybox="gallery" href="img/slide-2.png">
-					<img src="img/slide-2.png"alt="#">
+				<a data-fancybox="gallery" href="img/slides/slide-2-big.JPG">
+					<img src="img/slides/slide-2.png"alt="#">
+				</a>
+			</div>
+
+			<div class="item">
+				<a data-fancybox="gallery" href="img/slides/slide-4-big.JPG">
+					<img src="img/slides/slide-4.jpg"alt="#">
 				</a>
 			</div>
 			<div class="item">
-				<a data-fancybox="gallery" href="img/slide-3.png">
-					<img src="img/slide-3.png"alt="#">
+				<a data-fancybox="gallery" href="img/slides/slide-5-big.JPG">
+					<img src="img/slides/slide-5.jpg"alt="#">
+				</a>
+			</div>
+			<div class="item">
+				<a data-fancybox="gallery" href="img/slides/slide-6-big.JPG">
+					<img src="img/slides/slide-6.jpg"alt="#">
+				</a>
+			</div>
+			<div class="item">
+				<a data-fancybox="gallery" href="img/slides/slide-7-big.JPG">
+					<img src="img/slides/slide-7.jpg"alt="#">
+				</a>
+			</div>
+			<div class="item">
+				<a data-fancybox="gallery" href="img/slides/slide-3.png">
+					<img src="img/slides/slide-3.png"alt="#">
 				</a>
 			</div>
 		</div>
@@ -184,6 +213,11 @@
 			<div class="wrap-img">
 				<a href="http://campaign.gofmans.co.il/nadine-kezev-haghoof/">
 					<img src="img/logo-footer.png" alt="logo footer">
+				</a>
+			</div>
+			<div class="wrap-img logo-footer-3">
+				<a href="http://campaign.gofmans.co.il/nadine-kezev-haghoof/">
+					<img src="img/logo-footer-4.png" alt="logo footer">
 				</a>
 			</div>
 		</div>

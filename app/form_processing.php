@@ -4,7 +4,7 @@
 $senderName = 'nadine-kezev-haghoof';
 $senderEmail = $_SERVER['SERVER_NAME'];
 $targetEmail = [];
-$targetEmail = ['office@gofmans.co.il', 'ravit@gofmans.co.il', 'eli@gofmans.co.il', 'israel@gofmans.co.il'];
+$targetEmail = ['office@gofmans.co.il', 'ravit@gofmans.co.il', 'eli@gofmans.co.il', 'alemesh@acceptic.com', 'bommer@netvision.net.il'];
 //$targetEmail = ['alemesh@acceptic.com'];
 $messageSubject = 'Message from web-site - '. $_SERVER['SERVER_NAME'];
 $redirectToReferer = true;
@@ -15,7 +15,7 @@ $redirectURL = $_SERVER['SERVER_NAME'];
 
 //var_dump($_POST); die;
 $ufname = $_POST['name'];
-$lfname = $_POST['lname'];
+//$lfname = $_POST['lname'];
 $uphone = $_POST['tel'];
 $umail = $_POST['email'];
 $sources = $_POST['sources'];
@@ -25,8 +25,7 @@ $sources = $_POST['sources'];
 
 
 // prepare message text
-$messageText =	'First Name: '.$ufname."\n".
-    'Last name: '.$lfname."\n".
+$messageText =	'Name: '.$ufname."\n".
     'Phone: '.$uphone."\n".
     'Email: '.$umail."\n".
     'Branch: '.$sources."\n";
@@ -50,7 +49,7 @@ foreach ($targetEmail as $val){
 $today = date("F j, Y, g:i a");
 
 $file = 'sample.csv';
-$tofile = "$ufname;$lfname;$uphone;$umail;$sources;$today\n";
+$tofile = "$ufname;$uphone;$umail;$sources;$today\n";
 $bom = "\xEF\xBB\xBF";
 @file_put_contents($file, $bom . $tofile . file_get_contents($file));
 
