@@ -4,7 +4,7 @@
 $senderName = 'nadine-kezev-haghoof';
 $senderEmail = $_SERVER['SERVER_NAME'];
 $targetEmail = [];
-$targetEmail = ['office@gofmans.co.il', 'ravit@gofmans.co.il', 'eli@gofmans.co.il', 'alemesh@acceptic.com', 'bommer@netvision.net.il'];
+$targetEmail = ['office@gofmans.co.il', 'ravit@gofmans.co.il', 'alemesh@acceptic.com', 'israel@gofmans.co.il', 'bommer@netvision.net.il'];
 //$targetEmail = ['alemesh@acceptic.com'];
 $messageSubject = 'Message from web-site - '. $_SERVER['SERVER_NAME'];
 $redirectToReferer = true;
@@ -54,7 +54,8 @@ $bom = "\xEF\xBB\xBF";
 @file_put_contents($file, $bom . $tofile . file_get_contents($file));
 
 
-$redirectToTnxPage = 'http://campaign.gofmans.co.il/nadine-kezev-haghoof/thanks-page.html?Lead=true';
+$redirectToTnxPage = 'https://www.ketzevhagoof.co.il/thanks-page.html?Lead=true';
+//$redirectToTnxPage = 'http://ketzevhagoof.co.il/thanks-page.html?Lead=true';
 //$redirectToTnxPage = 'http://192.168.89.147/thanks-page.html?Lead=true';
 // redirect
 if($redirectToReferer) {
