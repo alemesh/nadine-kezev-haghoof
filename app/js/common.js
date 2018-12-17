@@ -16,7 +16,7 @@ $(function() {
             prevArrow: '<span class="slick-prev"></span>',
             nextArrow: '<span class="slick-next"></span>',
             variableWidth: true,
-            autoplay: true,
+            // autoplay: true,
             autoplaySpeed: 3000
         });
     })(jQuery);
